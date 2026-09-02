@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects Portfolio & On-Ground Proof | MR Builder & Real Estate | Lahore</title>
+  <meta name="description" content="Explore delivered turnkey luxury houses, active ongoing construction sites, and commercial plazas in DHA Lahore, Bahria Town, and LDA Avenue 1 by MR Builder." />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              950: '#0B1120',
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+              600: '#475569'
+            },
+            gold: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+              700: '#B45309'
+            },
+            whatsapp: {
+              DEFAULT: '#25D366',
+              dark: '#128C7E'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Bilingual Engine -->
+  <script src="assets/js/i18n.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-safe-dock">
+
+  <!-- TOP UTILITY BAR -->
+  <aside aria-label="Quick contact and office hours" class="bg-brand-950 text-slate-300 text-xs border-b border-slate-800/80 hidden md:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <a href="tel:+923001888326" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-500"></i>
+          <span><span data-i18n="topbar.direct">Direct:</span> <strong class="text-white">+92 300 1888326</strong></span>
+        </a>
+        <a href="mailto:manzar_manzi@gmail.com" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-gold-500"></i>
+          <span>manzar_manzi@gmail.com</span>
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-[11px] bg-slate-800 text-gold-400 px-2.5 py-0.5 rounded-full border border-slate-700">
+          <span data-i18n="topbar.office">Office: Al-Ghani Garden Phase 2, GT Road Lahore (31.597172, 74.457604)</span>
+        </span>
+        <button type="button" class="lang-switch-btn text-gold-400 hover:text-amber-300 flex items-center gap-1 text-xs font-bold transition-colors cursor-pointer">
+          <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+          <span>اردو / English</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVBAR -->
+  <header id="site-header" class="sticky top-0 z-40 bg-brand-900/95 glass-nav text-white border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/images/logo.jpg" alt="MR Builder Logo" class="w-12 h-12 rounded-xl object-contain bg-white p-1 shadow-lg group-hover:scale-105 transition-transform border border-slate-200" />
+          <div>
+            <span class="text-lg sm:text-xl font-black tracking-tight font-heading block leading-none text-white">MR BUILDER</span>
+            <span class="text-[11px] uppercase tracking-widest text-gold-400 font-semibold block mt-1">& Real Estate</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.home">Home</a>
+          <a href="properties.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.properties">Real Estate</a>
+          <a href="construction.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.construction">Construction Packages</a>
+          <a href="estimator.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.estimator">Cost Estimator</a>
+          <a href="portfolio.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-gold-400 bg-slate-800/60 transition-colors" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="list-property.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.listProperty">List Your Property</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <!-- Actions: Language Toggle & Always-Visible Call Now Button (ALL devices) -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Language Toggle Button -->
+          <button type="button" class="lang-switch-btn flex items-center gap-1 px-2.5 sm:px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-gold-400 text-xs font-bold border border-slate-700 transition-all cursor-pointer" title="Switch Language / زبان تبدیل کریں">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+            <span>اردو</span>
+          </button>
+
+          <!-- Always Visible Call Now Button (ALL devices) -->
+          <a href="tel:+923001888326" class="flex items-center gap-1.5 px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-gradient-gold hover:opacity-95 text-brand-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-600/20 transition-all hover:scale-105 whitespace-nowrap">
+            <i data-lucide="phone-call" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-brand-950"></i>
+            <span class="call-now-btn-text" data-i18n="nav.callNow">Call Now</span>
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" type="button" class="p-2 sm:p-2.5 rounded-xl bg-slate-800 text-slate-200 hover:text-white lg:hidden" aria-label="Toggle navigation menu">
+            <i data-lucide="menu" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-brand-950/80 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-brand-950 text-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 shadow-2xl border-l border-slate-800">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+        <div class="flex items-center gap-2.5">
+          <img src="assets/images/logo.jpg" alt="MR Builder" class="w-10 h-10 rounded-lg object-contain bg-white p-0.5 shadow shrink-0" />
+          <div>
+            <span class="font-bold text-sm text-white block">MR BUILDER</span>
+            <span class="text-[10px] text-gold-400 uppercase tracking-wider block">Manzar Malik</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" class="lang-switch-btn px-2.5 py-1 rounded-lg bg-slate-800 text-gold-400 text-xs font-bold border border-slate-700 flex items-center gap-1 cursor-pointer">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+            <span>اردو</span>
+          </button>
+          <button id="mobile-drawer-close" type="button" class="p-2 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="py-6 space-y-1">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium"><i data-lucide="home" class="w-4 h-4"></i> <span data-i18n="nav.home">Home</span></a>
+        <a href="properties.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium"><i data-lucide="building" class="w-4 h-4"></i> <span data-i18n="nav.properties">Real Estate</span></a>
+        <a href="construction.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium"><i data-lucide="hammer" class="w-4 h-4"></i> <span data-i18n="nav.construction">Construction Packages</span></a>
+        <a href="estimator.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium"><i data-lucide="calculator" class="w-4 h-4"></i> <span data-i18n="nav.estimator">Cost Estimator</span></a>
+        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/80 text-gold-400 font-semibold text-sm"><i data-lucide="briefcase" class="w-4 h-4"></i> <span data-i18n="nav.portfolio">Portfolio</span></a>
+        <a href="list-property.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium"><i data-lucide="plus-circle" class="w-4 h-4"></i> <span data-i18n="nav.listProperty">List Your Property</span></a>
+        <a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium"><i data-lucide="map-pin" class="w-4 h-4"></i> <span data-i18n="nav.contact">Contact</span></a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-slate-800 space-y-3">
+      <a href="tel:+923001888326" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-gold text-brand-950 font-bold text-xs uppercase tracking-wider">
+        <i data-lucide="phone" class="w-4 h-4"></i> Call Manzar Malik
+      </a>
+      <a href="https://wa.me/923001888326?text=Salam%20MR%20Builder%2C%20I%20want%20to%20visit%20an%20ongoing%20site." target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-whatsapp text-white font-bold text-xs">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Chat
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="bg-brand-950 text-white py-16 sm:py-20 relative overflow-hidden border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">
+          <i data-lucide="camera" class="w-3.5 h-3.5"></i>
+          On-Ground Construction Portfolio
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-white tracking-tight">
+          Completed Residences & On-Ground Sites
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-2 leading-relaxed">
+          Take a look at our delivered turnkey villas, ongoing RCC slab pouring sites, and modern architectural elevations across Lahore. We invite prospective clients to physically inspect our active sites anytime.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GALLERY GRID -->
+  <main class="py-16 sm:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Portfolio Filter Buttons -->
+      <div class="flex flex-wrap items-center gap-2 mb-10 pb-4 border-b border-slate-200">
+        <button type="button" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-amber-600 text-white shadow-sm transition-all" data-filter="all">
+          All Projects (8)
+        </button>
+        <button type="button" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all" data-filter="completed">
+          Completed Villas
+        </button>
+        <button type="button" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all" data-filter="ongoing">
+          Ongoing Sites
+        </button>
+        <button type="button" class="portfolio-filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all" data-filter="commercial">
+          Commercial Plazas
+        </button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group" data-category="completed">
+          <div class="aspect-[16/10] overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80" alt="1 Kanal Designer Bungalow DHA Phase 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-emerald-600 text-white">
+              Delivered Turnkey
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-gold-400 backdrop-blur-sm">
+              1 Kanal Bungalow
+            </span>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-semibold text-amber-700 mb-1">DHA Phase 6 Block L, Lahore</div>
+            <h3 class="font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">1 Kanal Spanish Designer Mansion</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Double-height entrance foyer, Italian show kitchen, solid Burma teak wood doors, imported 60x120cm porcelain tile flooring, and integrated solar system.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Duration: <strong>11 Months</strong></span>
+              <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20saw%20your%201%20Kanal%20Spanish%20bungalow%20in%20DHA%20Phase%206%20and%20want%20to%20build%20similar." target="_blank" class="font-bold text-amber-700 hover:underline">
+                Build This Design &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group" data-category="completed">
+          <div class="aspect-[16/10] overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="5 Marla Brand New Modern House Bahria Town" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-emerald-600 text-white">
+              Handover Complete
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-gold-400 backdrop-blur-sm">
+              5 Marla Modern
+            </span>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-semibold text-amber-700 mb-1">Sector C, Bahria Town Lahore</div>
+            <h3 class="font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">5 Marla Contemporary Turnkey House</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              3 master bedrooms with attached designer baths, 2 kitchens, Ash wood wardrobes, powder-coated aluminum double glass windows, and spacious car porch.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Duration: <strong>7.5 Months</strong></span>
+              <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20want%20to%20build%20a%205%20Marla%20modern%20house%20like%20your%20Bahria%20Town%20project." target="_blank" class="font-bold text-amber-700 hover:underline">
+                Build This Design &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group" data-category="ongoing">
+          <div class="aspect-[16/10] overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1541888946425-d0fbb186c5f8?auto=format&fit=crop&w=1000&q=80" alt="10 Marla Ongoing RCC Construction DHA Phase 7" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-amber-600 text-white">
+              Under Construction
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-gold-400 backdrop-blur-sm">
+              10 Marla Grey
+            </span>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-semibold text-amber-700 mb-1">Sector U, DHA Phase 7, Lahore</div>
+            <h3 class="font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">10 Marla Heavy RCC Grey Structure</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Mughal Supreme Grade 60 steel slab inspection completed, Kalat first-class brickwork, anti-termite barrier, and Dadex PVC drainage piping in progress.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Progress: <strong>65% (Grey Stage)</strong></span>
+              <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20want%20to%20visit%20the%20ongoing%2010%20Marla%20site%20in%20DHA%20Phase%207." target="_blank" class="font-bold text-amber-700 hover:underline">
+                Inspect Site &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group" data-category="commercial">
+          <div class="aspect-[16/10] overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80" alt="Lake City Commercial Plaza Handover" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-blue-600 text-white">
+              Commercial Plaza
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-gold-400 backdrop-blur-sm">
+              5 Marla Plaza
+            </span>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-semibold text-amber-700 mb-1">Main Boulevard Broadway, Lake City</div>
+            <h3 class="font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">Commercial Multi-Story Plaza Handover</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Basement, ground floor retail showroom, and 3 upper executive office floors. Structural glass curtain facade, high-speed elevator, and backup power integration.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Status: <strong>Leased Out</strong></span>
+              <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20want%20to%20build%20a%20commercial%20plaza%20in%20Lahore." target="_blank" class="font-bold text-amber-700 hover:underline">
+                Commercial BOQ &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="portfolio-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group" data-category="completed">
+          <div class="aspect-[16/10] overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1000&q=80" alt="7 Marla Corner Luxury Villa LDA Avenue 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-emerald-600 text-white">
+              Delivered
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-gold-400 backdrop-blur-sm">
+              7 Marla Corner
+            </span>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-semibold text-amber-700 mb-1">Sector A Corner, LDA Avenue 1, Lahore</div>
+            <h3 class="font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">7 Marla Corner Modern Elevation</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              4 executive bedrooms, dual street corner view, panoramic glass balconies, Turkish vanity sanitary sets, and custom imported ash woodwork.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Duration: <strong>8 Months</strong></span>
+              <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20am%20interested%20in%20building%20a%207%20Marla%20house." target="_blank" class="font-bold text-amber-700 hover:underline">
+                Build This Design &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="portfolio-card bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group" data-category="ongoing">
+          <div class="aspect-[16/10] overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="1 Kanal Architecture 3D Elevation DHA Phase 9 Prism" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-md text-[10px] font-bold uppercase bg-amber-600 text-white">
+              Ground Breaking
+            </span>
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-md text-[11px] font-bold bg-slate-950/80 text-gold-400 backdrop-blur-sm">
+              1 Kanal Villa
+            </span>
+          </div>
+          <div class="p-6">
+            <div class="text-xs font-semibold text-amber-700 mb-1">Block J, DHA Phase 9 Prism, Lahore</div>
+            <h3 class="font-bold text-slate-900 text-lg group-hover:text-amber-600 transition-colors">1 Kanal Park-Facing Royal Residence</h3>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+              Borehole soil testing and DHA map approval completed. Heavy foundation excavation with anti-termite chemical membrane treatment underway.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-200 flex items-center justify-between text-xs">
+              <span class="text-slate-500">Progress: <strong>Foundation Stage</strong></span>
+              <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20have%20a%20plot%20in%20DHA%20Phase%209%20Prism%20and%20want%20to%20build." target="_blank" class="font-bold text-amber-700 hover:underline">
+                Inquire For Phase 9 &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Book On-Ground Inspection Box -->
+      <div class="mt-16 bg-gradient-navy text-white rounded-3xl p-8 sm:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="space-y-3 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-gold-400 text-xs font-bold uppercase tracking-wider">
+            <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+            Seeing is Believing
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-black font-heading text-white">
+            Want to Inspect an Active Construction Site?
+          </h2>
+          <p class="text-slate-300 text-xs sm:text-sm max-w-xl">
+            We will gladly walk you through our ongoing sites in DHA or Bahria Town so you can see the Grade 60 steel quality, brickwork alignment, and plumbing conduits firsthand.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+          <a href="tel:+923001888326" class="px-6 py-3.5 rounded-xl bg-gradient-gold hover:opacity-95 text-brand-950 font-bold text-xs uppercase tracking-wider shadow-lg text-center">
+            Call Manzar Malik (+92 300 1888326)
+          </a>
+          <a href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20would%20like%20to%20schedule%20a%20visit%20to%20your%20active%20construction%20site." target="_blank" class="px-6 py-3.5 rounded-xl bg-whatsapp hover:bg-whatsapp-dark text-white font-bold text-xs uppercase tracking-wider shadow-lg flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            WhatsApp Site Visit Request
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-950 text-slate-400 text-xs border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>&copy; 2026 <strong>MR Builder & Real Estate</strong>. Principal: Manzar Malik (+92 300 1888326).</div>
+        <div class="text-slate-500">Turnkey Construction & Verified Property Brokerage in Lahore, Pakistan.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/923001888326?text=Salam%20MR%20Builder%2C%20I%20want%20to%20visit%20an%20ongoing%20construction%20site." target="_blank" rel="noopener noreferrer" class="floating-whatsapp fixed bottom-20 sm:bottom-6 right-5 sm:right-6 z-40 bg-whatsapp hover:bg-whatsapp-dark text-white p-3.5 sm:p-4 rounded-full shadow-2xl whatsapp-ripple flex items-center justify-center transition-transform hover:scale-110">
+    <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- STICKY MOBILE DOCK -->
+  <div class="sticky-bottom-bar fixed bottom-0 left-0 right-0 z-40 bg-brand-950/95 glass-nav border-t border-slate-800 py-2 px-3 sm:hidden shadow-2xl">
+    <div class="grid grid-cols-4 gap-1 text-center">
+      <a href="tel:+923001888326" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="phone-call" class="w-5 h-5 text-gold-400"></i>
+        <span class="text-[10px] font-medium mt-1">Call Now</span>
+      </a>
+      <a href="https://wa.me/923001888326?text=Salam%20MR%20Builder%2C%20I%20want%20to%20visit%20an%20ongoing%20site." target="_blank" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="message-circle" class="w-5 h-5 text-whatsapp"></i>
+        <span class="text-[10px] font-medium mt-1">WhatsApp</span>
+      </a>
+      <a href="estimator.html" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="calculator" class="w-5 h-5 text-gold-400"></i>
+        <span class="text-[10px] font-medium mt-1">Estimator</span>
+      </a>
+      <a href="list-property.html" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="plus-circle" class="w-5 h-5 text-gold-400"></i>
+        <span class="text-[10px] font-medium mt-1">List Property</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Portfolio filtering
+    document.addEventListener("DOMContentLoaded", () => {
+      const filterBtns = document.querySelectorAll(".portfolio-filter-btn");
+      const cards = document.querySelectorAll(".portfolio-card");
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach(b => {
+            b.classList.remove("bg-amber-600", "text-white", "shadow-sm");
+            b.classList.add("bg-white", "text-slate-700", "border", "border-slate-200");
+          });
+          btn.classList.remove("bg-white", "text-slate-700", "border", "border-slate-200");
+          btn.classList.add("bg-amber-600", "text-white", "shadow-sm");
+
+          const filter = btn.dataset.filter;
+          cards.forEach(card => {
+            if (filter === "all" || card.dataset.category === filter) {
+              card.classList.remove("hidden");
+            } else {
+              card.classList.add("hidden");
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

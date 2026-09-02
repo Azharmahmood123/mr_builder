@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+
+/* --- ROOT VARIABLES & BASE --- */
+:root {
+  --color-brand-primary: #0B1120;
+  --color-gold-accent: #D97706;
+  --color-whatsapp: #25D366;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+/* --- URDU / RTL STYLES --- */
+html[lang="ur"],
+html[dir="rtl"],
+body.lang-ur {
+  font-family: 'Noto Sans Arabic', 'Noto Nastaliq Urdu', 'Segoe UI', Tahoma, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="ur"] .font-heading,
+html[dir="rtl"] .font-heading {
+  font-family: 'Noto Sans Arabic', 'Outfit', sans-serif;
+  letter-spacing: 0 !important;
+}
+
+html[lang="ur"] .font-nastaliq,
+html[dir="rtl"] .font-nastaliq {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  line-height: 1.8;
+}
+
+/* RTL Icon and layout adjustments */
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .floating-whatsapp {
+  right: auto;
+  left: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  html[dir="rtl"] .floating-whatsapp {
+    right: auto;
+    left: 1.25rem;
+    bottom: 5rem;
+  }
+}
+
+/* --- GRADIENTS & GLASSMORPHISM --- */
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 50%, #B45309 100%);
+}
+
+.bg-gradient-navy {
+  background: linear-gradient(135deg, #0B1120 0%, #0F172A 50%, #1E293B 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* --- WHATSAPP FLOATING BUTTON & RIPPLE --- */
+.whatsapp-ripple {
+  position: relative;
+}
+
+.whatsapp-ripple::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  border: 2px solid #25D366;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+/* --- SAFE DOCK PADDING FOR MOBILE --- */
+.pb-safe-dock {
+  padding-bottom: 4.5rem;
+}
+
+@media (min-width: 640px) {
+  .pb-safe-dock {
+    padding-bottom: 0;
+  }
+}
+
+/* --- CUSTOM RANGE SLIDER STYLING --- */
+input[type="range"] {
+  accent-color: #D97706;
+}
+
+/* --- DIALOG MODAL STYLING --- */
+dialog::backdrop {
+  background-color: rgba(11, 17, 32, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+dialog[open] {
+  animation: modal-pop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modal-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* --- PRINT STYLES FOR ESTIMATOR --- */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print,
+  #site-header,
+  aside,
+  footer,
+  .floating-whatsapp,
+  .sticky-bottom-bar,
+  #mobile-drawer {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .shadow-xl, .shadow-2xl, .shadow-lg, .shadow-md {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+}

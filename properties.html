@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Real Estate Inventory | MR Builder & Real Estate | DHA, Bahria & Lahore</title>
+  <meta name="description" content="Browse verified residential plots, modern designer houses, commercial plots, and rentals in DHA Lahore, Bahria Town, LDA Avenue 1, and Lake City. Direct owner listings." />
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              950: '#0B1120',
+              900: '#0F172A',
+              800: '#1E293B',
+              700: '#334155',
+              600: '#475569'
+            },
+            gold: {
+              400: '#FBBF24',
+              500: '#F59E0B',
+              600: '#D97706',
+              700: '#B45309'
+            },
+            whatsapp: {
+              DEFAULT: '#25D366',
+              dark: '#128C7E'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Bilingual Engine -->
+  <script src="assets/js/i18n.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pb-safe-dock">
+
+  <!-- TOP UTILITY BAR -->
+  <aside aria-label="Quick contact and office hours" class="bg-brand-950 text-slate-300 text-xs border-b border-slate-800/80 hidden md:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <a href="tel:+923001888326" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5 text-gold-500"></i>
+          <span><span data-i18n="topbar.direct">Direct:</span> <strong class="text-white">+92 300 1888326</strong></span>
+        </a>
+        <a href="mailto:manzar_manzi@gmail.com" class="flex items-center gap-1.5 hover:text-gold-400 transition-colors">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-gold-500"></i>
+          <span>manzar_manzi@gmail.com</span>
+        </a>
+        <span class="flex items-center gap-1.5 text-slate-400">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-gold-500"></i>
+          <span data-i18n="topbar.hours">Mon–Sat: 10:00 AM – 8:00 PM</span>
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-[11px] bg-slate-800 text-gold-400 px-2.5 py-0.5 rounded-full border border-slate-700">
+          Pakistan Real Estate: Marla • Kanal • Direct Owner
+        </span>
+        <button type="button" class="lang-switch-btn text-gold-400 hover:text-amber-300 flex items-center gap-1 text-xs font-bold transition-colors cursor-pointer">
+          <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+          <span>اردو / English</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN HEADER / NAVBAR -->
+  <header id="site-header" class="sticky top-0 z-40 bg-brand-900/95 glass-nav text-white border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Crest Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/images/logo.jpg" alt="MR Builder Logo" class="w-12 h-12 rounded-xl object-contain bg-white p-1 shadow-lg group-hover:scale-105 transition-transform border border-slate-200" />
+          <div>
+            <span class="text-lg sm:text-xl font-black tracking-tight font-heading block leading-none text-white">
+              MR BUILDER
+            </span>
+            <span class="text-[11px] uppercase tracking-widest text-gold-400 font-semibold block mt-1">
+              & Real Estate
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a href="index.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.home">Home</a>
+          <a href="properties.html" class="px-3 py-2 rounded-lg text-sm font-semibold text-gold-400 bg-slate-800/60 transition-colors" data-i18n="nav.properties">Real Estate</a>
+          <a href="construction.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.construction">Construction Packages</a>
+          <a href="estimator.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.estimator">Cost Estimator</a>
+          <a href="portfolio.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="list-property.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.listProperty">List Your Property</a>
+          <a href="contact.html" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-200 hover:text-white hover:bg-slate-800/50 transition-colors" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <!-- Actions: Language Toggle & Always-Visible Call Now Button (ALL devices) -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Language Toggle Button -->
+          <button type="button" class="lang-switch-btn flex items-center gap-1 px-2.5 sm:px-3 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-gold-400 text-xs font-bold border border-slate-700 transition-all cursor-pointer" title="Switch Language / زبان تبدیل کریں">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+            <span>اردو</span>
+          </button>
+
+          <!-- Always Visible Call Now Button (ALL devices) -->
+          <a href="tel:+923001888326" class="flex items-center gap-1.5 px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-gradient-gold hover:opacity-95 text-brand-950 font-bold text-xs uppercase tracking-wider shadow-lg shadow-gold-600/20 transition-all hover:scale-105 whitespace-nowrap">
+            <i data-lucide="phone-call" class="w-3.5 sm:w-4 h-3.5 sm:h-4 text-brand-950"></i>
+            <span class="call-now-btn-text" data-i18n="nav.callNow">Call Now</span>
+          </a>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button id="mobile-menu-toggle" type="button" class="p-2 sm:p-2.5 rounded-xl bg-slate-800 text-slate-200 hover:text-white lg:hidden" aria-label="Toggle navigation menu">
+            <i data-lucide="menu" class="w-5 h-5 sm:w-6 sm:h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div id="mobile-drawer-overlay" class="fixed inset-0 bg-brand-950/80 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-brand-950 text-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-6 shadow-2xl border-l border-slate-800">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+        <div class="flex items-center gap-2.5">
+          <img src="assets/images/logo.jpg" alt="MR Builder" class="w-10 h-10 rounded-lg object-contain bg-white p-0.5 shadow shrink-0" />
+          <div>
+            <span class="font-bold text-sm text-white block">MR BUILDER</span>
+            <span class="text-[10px] text-gold-400 uppercase tracking-wider block">Manzar Malik</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" class="lang-switch-btn px-2.5 py-1 rounded-lg bg-slate-800 text-gold-400 text-xs font-bold border border-slate-700 flex items-center gap-1 cursor-pointer">
+            <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+            <span>اردو</span>
+          </button>
+          <button id="mobile-drawer-close" type="button" class="p-2 rounded-lg hover:bg-slate-800 text-slate-400 hover:text-white">
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="py-6 space-y-1">
+        <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium">
+          <i data-lucide="home" class="w-4 h-4"></i> <span data-i18n="nav.home">Home</span>
+        </a>
+        <a href="properties.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-slate-800/80 text-gold-400 font-semibold text-sm">
+          <i data-lucide="building" class="w-4 h-4"></i> <span data-i18n="nav.properties">Real Estate (Buy / Rent)</span>
+        </a>
+        <a href="construction.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium">
+          <i data-lucide="hammer" class="w-4 h-4"></i> <span data-i18n="nav.construction">Construction Packages</span>
+        </a>
+        <a href="estimator.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium">
+          <i data-lucide="calculator" class="w-4 h-4"></i> <span data-i18n="nav.estimator">Cost Estimator</span>
+        </a>
+        <a href="portfolio.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium">
+          <i data-lucide="briefcase" class="w-4 h-4"></i> <span data-i18n="nav.portfolio">Projects Portfolio</span>
+        </a>
+        <a href="list-property.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium">
+          <i data-lucide="plus-circle" class="w-4 h-4"></i> <span data-i18n="nav.listProperty">List Your Property</span>
+        </a>
+        <a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-slate-800 text-slate-200 text-sm font-medium">
+          <i data-lucide="map-pin" class="w-4 h-4"></i> <span data-i18n="nav.contact">Contact & Office Desk</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-slate-800 space-y-3">
+      <a href="tel:+923001888326" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-gold text-brand-950 font-bold text-xs uppercase tracking-wider">
+        <i data-lucide="phone" class="w-4 h-4"></i> <span class="call-now-btn-text" data-i18n="nav.callNow">Call Now (+92 300 1888326)</span>
+      </a>
+      <a href="https://wa.me/923001888326?text=Salam%20MR%20Builder%2C%20I%20want%20to%20inquire%20about%20real%20estate." target="_blank" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-whatsapp text-white font-bold text-xs">
+        <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Chat
+      </a>
+    </div>
+  </div>
+
+  <!-- PAGE HERO BANNER -->
+  <section class="bg-brand-950 text-white py-12 sm:py-16 relative overflow-hidden border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-gold-400 text-xs font-bold uppercase tracking-wider mb-3">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+          <span data-i18n="prop.badge">100% Direct Owner Inventory</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-white tracking-tight" data-i18n="prop.heading">
+          Featured Real Estate Listings
+        </h1>
+        <p class="text-slate-300 text-sm sm:text-base mt-2" data-i18n="prop.subheading">
+          Prime residential plots, designer brand new houses, commercial plots, and ready rentals with clear titles in Lahore's top societies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATIC CATEGORY TABS (NO DATABASE / NO SEARCH INPUT) -->
+  <section class="bg-white border-b border-slate-200 sticky top-20 z-30 shadow-sm py-3.5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <!-- Quick Category Filter Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto w-full sm:w-auto pb-1 sm:pb-0">
+        <button type="button" data-filter="all" class="prop-filter-tab px-4 py-2 rounded-xl text-xs font-bold bg-amber-600 text-white shadow-sm transition-all shrink-0" data-i18n="prop.all">
+          All Properties
+        </button>
+        <button type="button" data-filter="al-ghani" class="prop-filter-tab px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all shrink-0" data-i18n="prop.nearOffice">
+          Near Office (Al-Ghani Garden)
+        </button>
+        <button type="button" data-filter="house" class="prop-filter-tab px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all shrink-0" data-i18n="prop.houses">
+          Houses & Villas
+        </button>
+        <button type="button" data-filter="plot" class="prop-filter-tab px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all shrink-0" data-i18n="prop.plots">
+          Plots
+        </button>
+        <button type="button" data-filter="sale" class="prop-filter-tab px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all shrink-0" data-i18n="prop.forSale">
+          For Sale
+        </button>
+        <button type="button" data-filter="rent" class="prop-filter-tab px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-700 border border-slate-200 hover:border-amber-500 transition-all shrink-0" data-i18n="prop.forRent">
+          For Rent
+        </button>
+      </div>
+
+      <div class="hidden sm:flex items-center gap-2 text-xs text-slate-500 shrink-0">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>100% Direct Owner Inventory</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTIES MAIN GRID -->
+  <main class="py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="all-properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Injected via properties.js -->
+      </div>
+
+      <!-- Bottom Off-Market Request Card -->
+      <div class="mt-16 bg-white rounded-2xl border border-slate-200 p-8 sm:p-10 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-amber-700 uppercase tracking-wider">
+            <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+            Off-Market & Confidential Deals
+          </div>
+          <h3 class="text-2xl font-bold font-heading text-slate-900">Looking for a specific plot number or luxury bungalow?</h3>
+          <p class="text-xs sm:text-sm text-slate-600 max-w-2xl">
+            Many high-profile sellers and overseas investors prefer private transactions without public ads. Share your exact criteria with Manzar Malik directly on WhatsApp.
+          </p>
+        </div>
+        <a 
+          href="https://wa.me/923001888326?text=Salam%20Manzar%20Malik%2C%20I%20am%20looking%20for%20a%20specific%20property%20in%20Lahore." 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="px-6 py-3.5 rounded-xl bg-whatsapp hover:bg-whatsapp-dark text-white text-xs font-bold uppercase tracking-wider shadow-lg flex items-center gap-2 shrink-0 transition-all"
+        >
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Request Off-Market Inventory
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="bg-brand-950 text-slate-400 text-xs border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-gold p-0.5">
+              <div class="w-full h-full bg-brand-950 rounded-[8px] flex items-center justify-center text-gold-400 font-bold text-base">MR</div>
+            </div>
+            <div>
+              <span class="text-base font-bold text-white font-heading block">MR BUILDER & REAL ESTATE</span>
+              <span class="text-[10px] text-gold-400 uppercase tracking-wider block">Led by Manzar Malik</span>
+            </div>
+          </div>
+          <p class="text-slate-400 leading-relaxed max-w-sm">
+            Premier construction contractors and licensed real estate advisors based in Lahore, Pakistan. Delivering A+ turnkey residences, verified plot transactions, and commercial plazas.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3 font-heading uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-gold-400 transition-colors">Home</a></li>
+            <li><a href="properties.html" class="hover:text-gold-400 transition-colors">Real Estate Inventory</a></li>
+            <li><a href="construction.html" class="hover:text-gold-400 transition-colors">Construction Packages</a></li>
+            <li><a href="estimator.html" class="hover:text-gold-400 transition-colors">Construction Cost Estimator</a></li>
+            <li><a href="portfolio.html" class="hover:text-gold-400 transition-colors">Recent Projects Gallery</a></li>
+            <li><a href="list-property.html" class="hover:text-gold-400 transition-colors">List Your Property</a></li>
+            <li><a href="contact.html" class="hover:text-gold-400 transition-colors">Contact & Office</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3 font-heading uppercase tracking-wider">Societies Covered</h4>
+          <ul class="space-y-2">
+            <li><span class="text-slate-300">DHA Lahore (Ph 5, 6, 7, 8, 9)</span></li>
+            <li><span class="text-slate-300">Bahria Town (Sectors C, E, F)</span></li>
+            <li><span class="text-slate-300">LDA Avenue 1 (Raiwind Road)</span></li>
+            <li><span class="text-slate-300">Lake City (Main Boulevard)</span></li>
+            <li><span class="text-slate-300">Wapda Town & Valencia</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white text-sm mb-3 font-heading uppercase tracking-wider">Contact Desk</h4>
+          <ul class="space-y-2.5">
+            <li>
+              <span class="text-slate-500 block text-[11px]">Managing Director:</span>
+              <strong class="text-white">Manzar Malik</strong>
+            </li>
+            <li>
+              <span class="text-slate-500 block text-[11px]">Direct Phone / WhatsApp:</span>
+              <a href="tel:+923001888326" class="text-gold-400 font-bold hover:underline">+92 300 1888326</a>
+            </li>
+            <li>
+              <span class="text-slate-500 block text-[11px]">Email Address:</span>
+              <a href="mailto:manzar_manzi@gmail.com" class="text-slate-300 hover:text-white">manzar_manzi@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+        <div>&copy; 2026 <strong>MR Builder & Real Estate</strong>. All Rights Reserved. Principal: Manzar Malik.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/923001888326?text=Salam%20MR%20Builder%2C%20I%20want%20to%20inquire%20about%20properties." target="_blank" rel="noopener noreferrer" class="floating-whatsapp fixed bottom-20 sm:bottom-6 right-5 sm:right-6 z-40 bg-whatsapp hover:bg-whatsapp-dark text-white p-3.5 sm:p-4 rounded-full shadow-2xl whatsapp-ripple flex items-center justify-center transition-transform hover:scale-110">
+    <svg class="w-7 h-7 sm:w-8 sm:h-8 fill-current" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- STICKY MOBILE BOTTOM BAR -->
+  <div class="sticky-bottom-bar fixed bottom-0 left-0 right-0 z-40 bg-brand-950/95 glass-nav border-t border-slate-800 py-2 px-3 sm:hidden shadow-2xl">
+    <div class="grid grid-cols-4 gap-1 text-center">
+      <a href="tel:+923001888326" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="phone-call" class="w-5 h-5 text-gold-400"></i>
+        <span class="text-[10px] font-medium mt-1">Call Now</span>
+      </a>
+      <a href="https://wa.me/923001888326?text=Salam%20MR%20Builder%2C%20I%20want%20to%20inquire%20about%20real%20estate." target="_blank" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="message-circle" class="w-5 h-5 text-whatsapp"></i>
+        <span class="text-[10px] font-medium mt-1">WhatsApp</span>
+      </a>
+      <a href="estimator.html" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="calculator" class="w-5 h-5 text-gold-400"></i>
+        <span class="text-[10px] font-medium mt-1">Estimator</span>
+      </a>
+      <a href="list-property.html" class="flex flex-col items-center justify-center p-1 text-slate-300 hover:text-white">
+        <i data-lucide="plus-circle" class="w-5 h-5 text-gold-400"></i>
+        <span class="text-[10px] font-medium mt-1">List Property</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- PROPERTY DETAIL MODAL DIALOG -->
+  <dialog id="property-detail-dialog" class="p-0 bg-transparent" aria-label="Property Details Modal">
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/properties-data.js"></script>
+  <script src="assets/js/properties.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      initPropertyCatalog({
+        containerId: "all-properties-grid",
+        filterTabsSelector: ".prop-filter-tab"
+      });
+    });
+  </script>
+</body>
+</html>
+
